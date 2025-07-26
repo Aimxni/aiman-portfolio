@@ -9,5 +9,5 @@ C • SystemVerilog • Assembly • Altium • STM32CubeIDE
 
 - [Reflow Oven Controller](reflowoven.md)
 
-Feel free to explore each project to see detailed descriptions, photos, and implementation notes.
+Feel free to explore each project to see detailed descriptions and photos.
 
