@@ -17,7 +17,7 @@ automatic shutdown feature for overheating prevention.
 
 
 <p align="center">
-  <img src="assets/img/IMG_1365.jpeg" alt="Reflow Oven Controller" width="400" height="300"/>
+  <img src="assets/img/IMG_1365.jpeg" alt="Reflow Oven Controller" width="400" height="400"/>
 </p>
 
 <p align="center"><em>A temperature-controlled reflow oven with automated features and real-time safety mechanisms.</em></p>
