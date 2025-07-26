@@ -15,11 +15,9 @@ indicator for enhanced user experience.
 - Implemented safety and optimization mechanisms, such as a PWM-controlled solid-state relay for precise heating control and an
 automatic shutdown feature for overheating prevention.
 
-### Reflow Oven Controller Prototype
 
 <p align="center">
-  <img src="assets/img/IMG_1365.jpeg" alt="Reflow Oven Controller" width="400"/>
+  <img src="assets/img/IMG_1365.jpeg" alt="Reflow Oven Controller" width="400" height="300"/>
 </p>
 
 <p align="center"><em>A temperature-controlled reflow oven with automated features and real-time safety mechanisms.</em></p>
-
