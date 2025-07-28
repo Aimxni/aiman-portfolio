@@ -72,19 +72,15 @@
 									<ul>
 										<li>To provide a visual representation of the Finite State Machine (FSM) state, we designed a 1-to-4 decoder circuit using NAND and NOT gates, connected to three LEDs.</li>
 										<li>The microcontroller sends either a high (1) or low (0) signal to a BJT, which amplifies the signal before passing it to the decoder.</li>
-										<li>The decoder processes the signal and activates the corresponding LED, providing real-time state indication.</strong> 
-											<ul>
-												<li><code>SRP_GetCurrentCeiling:</code> Retrieves the current system ceiling.</li>
-												<li><code>xSRPCreateBinary:</code> Creates semaphores with SRP properties.</li>
-												<li><code>xSRPSemaphoreTake:</code> Acquires an SRP semaphore.</li>
-												<li><code>xSRPSemaphoreGive:</code> Releases an SRP semaphore.</li>
-											</ul>
-										</li>
+										<li>The decoder processes the signal and activates the corresponding LED, providing real-time state indication.</li>
 									</ul>
 
-									<p>
-										The SRP mechanisms prevent priority inversion by enforcing system ceilings and simplify real-time system design.
-									</p>
+									<h3 class="major">Servo Motor for Oven Door Automation</h3>
+
+									<ul>
+										<li>A servo motor was used to automatically open the oven door during the cooling stage.</li>
+										<li>Since the servo motor lacked sufficient torque, we attached a face mask to the oven door to increase tension and facilitate smooth opening.</li>
+									</ul>
 
 
 									<h3 class="major">Testing the Scheduler and SRP</h3>
