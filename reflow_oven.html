@@ -66,20 +66,13 @@
 										<li>Cooling fan to accelerate the last state.</li>
 										<li> An additional graph of the temperature read by the digital multimeter.</li>
 									</ul>
+									<p>In addition to the core functionality of the reflow oven controller, we implemented several enhancements to improve usability, feedback, and automation.</p>
 
-									<p>
-										With my implementation, users can call the <code>xTaskCreateEDF</code> function to create tasks with periodic execution. It calculates activation times and absolute deadlines dynamically for each task. Admission control ensures that tasks are only admitted if system utilization allows.
-									</p>
-
-									<h3 class="major">SRP Implementation</h3>
-									<p>
-										The project integrates <strong>Stack Resource Policy (SRP)</strong> mechanisms into FreeRTOS to manage resource access in systems with priority inheritance requirements. This ensures efficient and deterministic resource sharing.
-									</p>
-
+									<h3 class="major">LED Status Indicator using Logic Gates</h3>
 									<ul>
-										<li><strong>System Ceiling Management:</strong> Tracks active system ceilings to enforce resource access rules.</li>
-										<li><strong>SRP Binary Semaphores:</strong> Custom semaphores with SRP properties like priority ceiling and maximum task priority.</li>
-										<li><strong>Functions:</strong> 
+										<li>To provide a visual representation of the Finite State Machine (FSM) state, we designed a 1-to-4 decoder circuit using NAND and NOT gates, connected to three LEDs.</li>
+										<li>The microcontroller sends either a high (1) or low (0) signal to a BJT, which amplifies the signal before passing it to the decoder.</li>
+										<li>The decoder processes the signal and activates the corresponding LED, providing real-time state indication.</strong> 
 											<ul>
 												<li><code>SRP_GetCurrentCeiling:</code> Retrieves the current system ceiling.</li>
 												<li><code>xSRPCreateBinary:</code> Creates semaphores with SRP properties.</li>
@@ -92,12 +85,6 @@
 									<p>
 										The SRP mechanisms prevent priority inversion by enforcing system ceilings and simplify real-time system design.
 									</p>
-
-									<!-- <div class="col" style="text-align: center;">
-										<span class="image fit" style="display: inline-block; width: 50%;">
-										  <img src="images/EDF_Scheduler/demo_task_output.png" alt="Demo Task Output" style="max-width: 100%; height: auto; margin: 0 auto;" />
-										</span>
-									</div> -->
 
 
 									<h3 class="major">Testing the Scheduler and SRP</h3>
