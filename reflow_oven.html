@@ -32,133 +32,114 @@
 					<section id="wrapper">
 						<header>
 							<div class="inner">
-								<h2>EDF Scheduler and SRP Implementation</h2>
+								<h2>Reflow Oven Controller</h2>
 								<p><a href="https://github.com/adarshgovi/CPSC538-Project-Submission" class="special">Github Repository</a></p>
 							</div>
 						</header>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/IMG_0979.jpeg" alt="" data-position="center center" /></a>
-							<div class="content">
+				<!-- Content -->
+							<div class="wrapper">
 								<div class="inner">
-									<h2>HEY THERE!</h2>
-									<p>Welcome to my portfolio! I'm currently pursuing a Bachelor of Applied Science in Electrical Engineering at the University of British Columbia. My interests lie in embedded systems, digital design, and hands-on prototyping of real-world electronic solutions.
-This portfolio showcases some of the technical projects I've worked on, including hardware design, firmware development, and system-level integration. Each project reflects my commitment to learning through building — whether it's designing a reflow oven controller or working with microcontrollers to automate real-world processes.
-Feel free to explore the projects below! </p>
-									<ul class="actions">
-									</ul>
-								</div>
-							</div>
-						</section>
-					
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Projects</h2>
-							<p>Highlights of the major projects I’ve undertaken throughout my journey as an engineering student.</p>
-							<div class="features">
-								<section>
-									 <a href="reflow_oven.html">
-									<img src="images/IMG_1365.jpeg" alt="Reflow Oven Controller" style="width:300px; height:350px; border-radius: 10px;">
-									 </a>
-											<h3 class="major">Reflow Oven Controller</h3>
-											<p>
-												Designed and implemented a reflow oven controller using a finite state machine (FSM) to regulate temperature profiles, improving PCB soldering precision.
-											</p>
-								</section>
-								<section>
-									<img src="images/IMG_1437.jpeg" alt="Remote Controlled Coin Picking Robot" style="width:300px; height:350px; border-radius: 10px;">
-									<h3>Remote Controlled Coin Picking Robot</h3>
-									<p>Built an autonomous coin-picking robot with metal detection, wireless control, and servo-driven collection mechanisms to detect, pick up, and count coins within a defined perimeter.</p>
-								</section>
-								<section>
-									<img src="images/Real-Time Audio.png" alt="Real-Time Speech Recognition System" style="width:350px; height:350px; border-radius: 10px;">
-									<h3>Real-Time Speech Recognition System</h3>
-									<p>Designed a Real-Time Speech Recognition System PCB using the INMP441 microphone for accurate sound capture, enabling seamless audio detection and processing in embedded applications.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
-							<ul class="actions">
-							</ul>
-						</div>
-					</section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<h3 class="major">Project Overview</h3>
+									<p>
+										This project involved designing a microcontroller-based reflow oven controller to automate the PCB soldering process with precise temperature control. A Finite State Machine (FSM) managed heating stages—preheat, soak, reflow, and cooling—based on real-time thermocouple readings. Oven power was modulated via PWM and a solid-state relay, with safety mechanisms to shut off heating if conditions weren’t met.
+										To enhance usability, we added a servo motor to open the oven door automatically, a fan for faster cooling, a buzzer to signal state transitions, and a 1-of-4 decoder with LED indicators. Temperature data was logged and visualized through a Python GUI, making the system both user-friendly and reliable for consistent, hands-free soldering.
+										I completed this project as part of ELEC 291 at UBC.
+									</p>
+
+									<h3 class="major">What is EDF and SRP?</h3>
+									<p>
+										<strong>EDF (Earliest Deadline First):</strong> A dynamic scheduling algorithm that prioritizes tasks based on their deadlines. The task with the earliest deadline is executed first, ensuring time-critical operations are performed within their constraints.
+									</p>
+									<p>
+										<strong>SRP (Stack Resource Policy):</strong> A protocol to manage resource access in priority-driven systems. It prevents priority inversion and deadlocks by assigning a system ceiling to resources and ensuring tasks adhere to these ceilings.
+									</p>
+
+									<h3 class="major">EDF Scheduler Implementation Details</h3>
+									<ul>
+										<li><strong>Task Control Block Modifications:</strong> Introduced fields like TaskDeadline, TaskPeriod, and ActivationTime.</li>
+										<li><strong>EDF Task Creation:</strong> A dedicated method to initialize tasks with EDF-specific parameters.</li>
+										<li><strong>Admission Control:</strong> Ensures system utilization does not exceed 1 at task creation.</li>
+										<li><strong>Deadline Monitoring:</strong> Detects and handles missed deadlines with customizable options.</li>
+										<li><strong>Demo Tasks:</strong> Included to validate EDF functionality with busy loops simulating workloads.</li>
+									</ul>
+
+									<p>
+										With my implementation, users can call the <code>xTaskCreateEDF</code> function to create tasks with periodic execution. It calculates activation times and absolute deadlines dynamically for each task. Admission control ensures that tasks are only admitted if system utilization allows.
+									</p>
+
+									<h3 class="major">SRP Implementation</h3>
+									<p>
+										The project integrates <strong>Stack Resource Policy (SRP)</strong> mechanisms into FreeRTOS to manage resource access in systems with priority inheritance requirements. This ensures efficient and deterministic resource sharing.
+									</p>
+
+									<ul>
+										<li><strong>System Ceiling Management:</strong> Tracks active system ceilings to enforce resource access rules.</li>
+										<li><strong>SRP Binary Semaphores:</strong> Custom semaphores with SRP properties like priority ceiling and maximum task priority.</li>
+										<li><strong>Functions:</strong> 
+											<ul>
+												<li><code>SRP_GetCurrentCeiling:</code> Retrieves the current system ceiling.</li>
+												<li><code>xSRPCreateBinary:</code> Creates semaphores with SRP properties.</li>
+												<li><code>xSRPSemaphoreTake:</code> Acquires an SRP semaphore.</li>
+												<li><code>xSRPSemaphoreGive:</code> Releases an SRP semaphore.</li>
 											</ul>
 										</li>
 									</ul>
-								</section>
+
+									<p>
+										The SRP mechanisms prevent priority inversion by enforcing system ceilings and simplify real-time system design.
+									</p>
+
+									<!-- <div class="col" style="text-align: center;">
+										<span class="image fit" style="display: inline-block; width: 50%;">
+										  <img src="images/EDF_Scheduler/demo_task_output.png" alt="Demo Task Output" style="max-width: 100%; height: auto; margin: 0 auto;" />
+										</span>
+									</div> -->
+
+
+									<h3 class="major">Testing the Scheduler and SRP</h3>
+									<p>
+										The enhancements were validated using demo workloads with the pico connected to various LEDs to visually demonstrate different tasks running. Tests verified the EDF scheduler's task execution order, deadline enforcement, and system utilization. For SRP, tasks were tested for deterministic resource sharing and priority inversion prevention. Initial testing involved simply stepping through the code to ensure correctness. 
+									<h3 class="major">Challenges and Lessons Learned</h3>
+									<p>
+										<strong>Challenges:</strong>
+										<ul>
+											<li>Integrating EDF with the existing FreeRTOS scheduler required a deep understanding of its architecture.</li>
+											<li>Debugging timing issues on the Raspberry Pi Pico due to its limited debugging tools.</li>
+											<li>Ensuring resource ceilings were correctly enforced under SRP in all edge cases.</li>
+										</ul>
+									</p>
+									<p>
+										<strong>Lessons Learned:</strong>
+										<ul>
+											<li>Gained proficiency in FreeRTOS internals and task scheduling concepts.</li>
+											<li>Developed a systematic approach to debugging real-time systems.</li>
+											<li>Improved understanding of real-time scheduling algorithms and resource management protocols.</li>
+										</ul>
+									</p>
+
+									<h3 class="major">Other Projects</h3>
+									<section class="features">
+										<article>
+											<a href="inverted_pendulum.html" class="image"><img src="images/InvertedPendulum/pendulum_gif.gif" alt="" /></a>
+											<h3 class="major">Inverted Pendulum</h3>
+											<p>Designed a real-time control system to evaluate the performance of a Byzantine Fault Tolerant key-value store.</p>
+											<a href="inverted_pendulum.html" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="autonomous_rover.html" class="image"><img src="images/autonomous_rover/com_vis_comp.png" alt="" /></a>
+											<h3 class="major">2nd Place - Autonomous Driving Competition</h3>
+											<p>Trained a rover to drive on a simulated road, detecting license plates and avoiding obstacles.</p>
+											<a href="autonomous_rover.html" class="special">Learn more</a>
+										</article>
+									</section>
+
+								</div>
 							</div>
-						</div>
+
 					</section>
 
-			</div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
