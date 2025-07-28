@@ -82,35 +82,13 @@
 										<li>Since the servo motor lacked sufficient torque, we attached a face mask to the oven door to increase tension and facilitate smooth opening.</li>
 									</ul>
 
-
-									<h3 class="major">Testing the Scheduler and SRP</h3>
-									<p>
-										The enhancements were validated using demo workloads with the pico connected to various LEDs to visually demonstrate different tasks running. Tests verified the EDF scheduler's task execution order, deadline enforcement, and system utilization. For SRP, tasks were tested for deterministic resource sharing and priority inversion prevention. Initial testing involved simply stepping through the code to ensure correctness. 
-									<h3 class="major">Challenges and Lessons Learned</h3>
-									<p>
-										<strong>Challenges:</strong>
-										<ul>
-											<li>Integrating EDF with the existing FreeRTOS scheduler required a deep understanding of its architecture.</li>
-											<li>Debugging timing issues on the Raspberry Pi Pico due to its limited debugging tools.</li>
-											<li>Ensuring resource ceilings were correctly enforced under SRP in all edge cases.</li>
-										</ul>
-									</p>
-									<p>
-										<strong>Lessons Learned:</strong>
-										<ul>
-											<li>Gained proficiency in FreeRTOS internals and task scheduling concepts.</li>
-											<li>Developed a systematic approach to debugging real-time systems.</li>
-											<li>Improved understanding of real-time scheduling algorithms and resource management protocols.</li>
-										</ul>
-									</p>
-
 									<h3 class="major">Other Projects</h3>
 									<section class="features">
 										<article>
-											<a href="inverted_pendulum.html" class="image"><img src="images/InvertedPendulum/pendulum_gif.gif" alt="" /></a>
-											<h3 class="major">Inverted Pendulum</h3>
-											<p>Designed a real-time control system to evaluate the performance of a Byzantine Fault Tolerant key-value store.</p>
-											<a href="inverted_pendulum.html" class="special">Learn more</a>
+											<a href="remote_controlled_robot.html" class="image"><img src="images/IMG_1437.jpeg" alt="Remote Controlled Coin Picking Robot" style="width:300px; height:350px; border-radius: 10px;"></a>
+											<h3 class="major">Remote Controlled Coin Picking Robot</h3>
+											<p>Built an autonomous coin-picking robot with metal detection, wireless control, and servo-driven collection mechanisms to detect, pick up, and count coins within a defined perimeter.</p>
+											<a href="remote_controlled_robot.html" class="special">Learn more</a>
 										</article>
 										<article>
 											<a href="autonomous_rover.html" class="image"><img src="images/autonomous_rover/com_vis_comp.png" alt="" /></a>
