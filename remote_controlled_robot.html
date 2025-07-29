@@ -63,11 +63,11 @@
 									</ul>
 									<p>In addition to the core functionality of the Remote Controlled Coin Picking Robot, we implemented several enhancements to improve usability, feedback, and automation.</p>
 
-									<h3 class="major">LED Status Indicator using Logic Gates</h3>
+									<h3 class="major">Coin Counter Display</h3>
 									<ul>
-										<li>To provide a visual representation of the Finite State Machine (FSM) state, we designed a 1-to-4 decoder circuit using NAND and NOT gates, connected to three LEDs.</li>
-										<li>The microcontroller sends either a high (1) or low (0) signal to a BJT, which amplifies the signal before passing it to the decoder.</li>
-										<li>The decoder processes the signal and activates the corresponding LED, providing real-time state indication.</li>
+										<li>Integrated a 7-segment display to show the number of coins picked up by the car.</li>
+										<li>Each time the servo motor activates to pick up a coin, the system increments a counter, and it is played in real time on the 7-segment display.</li>
+										<li>The count increments by one with each successful coin pickup, and once the count reaches 20, it resets to zero and begins counting again, following the coin collection requirements defined in the project scope.</li>
 									</ul>
 
 									<h3 class="major">Servo Motor for Oven Door Automation</h3>
