@@ -1,1 +1,130 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Aiman - Remote Controlled Coin Picking Robot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+        <!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Aiman's Portfolio</a></h1>
+
+						<h2>
+							<a href="https://www.linkedin.com/in/aimanishmam/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
+							<a href="https://github.com/Aimxni?tab=repositories" class="icon brands fa-github"><span class="label">GitHub</span></a>
+						</h2>
+
+					</header>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Remote Controlled Coin Picking Robot</h2>
+								<!--<p><a href="https://github.com/adarshgovi/CPSC538-Project-Submission" class="special">Github Repository</a></p>--!>
+							</div>
+						</header>
+
+				<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Project Overview</h3>
+									<p>
+										This project involved designing a microcontroller-based reflow oven controller to automate the PCB soldering process with precise temperature control. A Finite State Machine (FSM) managed heating stages—preheat, soak, reflow, and cooling—based on real-time thermocouple readings. Oven power was modulated via PWM and a solid-state relay, with safety mechanisms to shut off heating if conditions weren’t met.
+										To enhance usability, we added a servo motor to open the oven door automatically, a fan for faster cooling, a buzzer to signal state transitions, and a 1-of-4 decoder with LED indicators. Temperature data was logged and visualized through a Python GUI, making the system both user-friendly and reliable for consistent, hands-free soldering.
+										I completed this project as part of ELEC 291 at UBC.
+									</p>
+
+									<h3 class="major">Basic Functionality</h3>
+									<ul>
+										<li>Control states at which the temperature and time are required, depending on which soldering state the board is using the Finite State Machine (FSM)</li>
+										<li>Adjust the oven power (through oscillation) corresponding to which state the controller is at</li>
+										<li>Take the temperatures using a thermocouple wire and verify them through a Python program</li>
+										<li>Adjust the parameters controlling threshold temperatures and times for the FSM</li>
+										<li>Safety feature to turn the oven off if a certain temperature is not reached within 60 seconds.</li>
+										<li>Button to stop the process at any time.</li>
+									</ul>
+
+									<h3 class="major">Bonus Features</h3>
+									<ul>
+										<li>A buzzer that alerts when each state is finished</li>
+										<li>An additional PWM signal is emitted by the microcontroller to power a servo motor to open the door of the oven.</li>
+										<li>A 1-of-4 decoder to indicate each state of the FSM.</li>
+										<li>Cooling fan to accelerate the last state.</li>
+										<li> An additional graph of the temperature read by the digital multimeter.</li>
+									</ul>
+									<p>In addition to the core functionality of the reflow oven controller, we implemented several enhancements to improve usability, feedback, and automation.</p>
+
+									<h3 class="major">LED Status Indicator using Logic Gates</h3>
+									<ul>
+										<li>To provide a visual representation of the Finite State Machine (FSM) state, we designed a 1-to-4 decoder circuit using NAND and NOT gates, connected to three LEDs.</li>
+										<li>The microcontroller sends either a high (1) or low (0) signal to a BJT, which amplifies the signal before passing it to the decoder.</li>
+										<li>The decoder processes the signal and activates the corresponding LED, providing real-time state indication.</li>
+									</ul>
+
+									<h3 class="major">Servo Motor for Oven Door Automation</h3>
+
+									<ul>
+										<li>A servo motor was used to automatically open the oven door during the cooling stage.</li>
+										<li>Since the servo motor lacked sufficient torque, we attached a face mask to the oven door to increase tension and facilitate smooth opening.</li>
+									</ul>
+
+									<h3 class="major">Other Projects</h3>
+									<section class="features">
+										<article>
+											<div style="text-align: center;">
+											<a href="remote_controlled_robot.html" class="image"><img src="images/IMG_1437.jpeg" alt="Remote Controlled Coin Picking Robot" style="width:300px; height:350px; border-radius: 10px;"></a>
+											<h3 class="major">Remote Controlled Coin Picking Robot</h3>
+											</div>
+											<p>Built an autonomous coin-picking robot with metal detection, wireless control, and servo-driven collection mechanisms to detect, pick up, and count coins within a defined perimeter.</p>
+											<a href="remote_controlled_robot.html" class="special">Learn more</a>
+										</article>
+										<article>
+											<div style="text-align: center;">
+											<a href="real_time_speech.html" class="image"><img src="images/Real-Time Audio.png" alt="Real-Time Speech Recognition System" style="width:350px; height:350px; border-radius: 10px;"></a>
+											<h3 class="major">Real-Time Speech Recognition System</h3>
+											</div>
+											<p>Designed a Real-Time Speech Recognition System PCB using the INMP441 microphone for accurate sound capture, enabling seamless audio detection and processing in embedded applications.</p>
+											<a href="real_time_speech.html" class="special">Learn more</a>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
