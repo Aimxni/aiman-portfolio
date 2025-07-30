@@ -1,1 +1,128 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Aiman - Real Time Speech Recognition System</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+        <!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Aiman's Portfolio</a></h1>
+
+						<h2>
+							<a href="https://www.linkedin.com/in/aimanishmam/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
+							<a href="https://github.com/Aimxni?tab=repositories" class="icon brands fa-github"><span class="label">GitHub</span></a>
+						</h2>
+
+					</header>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Real Time Speech Recognition System</h2>
+								<!--<p><a href="https://github.com/adarshgovi/CPSC538-Project-Submission" class="special">Github Repository</a></p>--!>
+							</div>
+						</header>
+
+				<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Project Overview</h3>
+									<p>
+										This project involved designing a microcontroller-based autonomous robot capable of detecting, picking up, and counting metallic coins within a defined boundary. Communication between two microcontrollers—PIC32 and EFM8—was established using JDY-40 radio modules, while a Colpitts oscillator enabled real-time metal detection. The robot operated in both manual and automatic modes, with a servo-actuated collection mechanism and an electromagnet to retrieve coins.
+										To enhance functionality, we integrated ultrasonic sensors for obstacle avoidance, LED indicators for movement feedback, a joystick-controlled remote for manual navigation, and a 7-segment display to track collected coins. The result was a stable, responsive, and feature-rich robotic system designed to demonstrate efficient wireless communication, autonomous navigation, and metal detection.
+									</p>
+
+									<h3 class="major">Basic Functionality</h3>
+									<ul>
+										<li><strong>Metal Detector</strong>: Uses a Colpitts oscillator circuit to detect the presence of metallic coins in real time.</li>
+										<li><strong>Perimeter Detector</strong>: Combines an ultrasonic sensor to detect physical obstacles and an inductor-based circuit to sense voltage changes, allowing the robot to identify and stay within a defined boundary.</li>
+										<li><strong>Coin Picker</strong>: Servo-driven mechanism with an electromagnet to collect and lift detected coins.</li>
+										<li><strong>Automatic and Manual modes</strong>: Supports both autonomous operation and joystick-based manual control via wireless communication.</li>
+									</ul>
+
+									<h3 class="major">Bonus Features</h3>
+									<ul>
+										<li>Ultrasonic sensor that allows the robot to avoid obstacles on its way.</li>
+										<li>Rear LEDs that indicate which way the robot is rotating or moving backward.</li>
+										<li> 7-segment display that shows how many coins have been picked up.</li>
+									</ul>
+									<p>In addition to the core functionality of the Remote Controlled Coin Picking Robot, we implemented several enhancements to improve usability, feedback, and automation.</p>
+
+									<h3 class="major">Coin Counter Display</h3>
+									<ul>
+										<li>Integrated a 7-segment display to show the number of coins picked up by the car.</li>
+										<li>Each time the servo motor activates to pick up a coin, the system increments a counter, and it is played in real time on the 7-segment display.</li>
+										<li>The count increments by one with each successful coin pickup, and once the count reaches 20, it resets to zero and begins counting again, following the coin collection requirements defined in the project scope.</li>
+									</ul>
+
+									<h3 class="major">Tail Light Direction Indicators</h3>
+
+									<ul>
+										<li>LEDs are positioned to mimic the conventional tail lights found in standard vehicles.</li>
+										<li>The left or right LED lights up to indicate the direction of movement (left or right turn).</li>
+										<li>When the car reverses, both LEDSs follow the standard automotive convention for indicating reverse motion.</li>
+										<li>This enhanced the realism and user experience by simulating actual car lighting behaviour.</li>
+										<li>Provides visual feedback to easily determine the direction in which the car is moving.</li>
+									</ul>
+
+									<h3 class="major">Other Projects</h3>
+									<section class="features">
+										<article>
+											<div style="text-align: center;">
+											<a href="reflow_oven.html" class="image"><img src="images/IMG_1365.jpeg" alt="Reflow Oven Controller" style="width:300px; height:350px; border-radius: 10px;"></a>
+											<h3 class="major">Reflow Oven Controller</h3>
+											</div>
+											<p>Designed and implemented a reflow oven controller using a finite state machine (FSM) to regulate temperature profiles, improving PCB soldering precision.</p>
+											<a href="remote_controlled_robot.html" class="special">Learn more</a>
+										</article>
+										<article>
+											<div style="text-align: center;">
+											<a href="real_time_speech.html" class="image"><img src="images/Real-Time Audio.png" alt="Real-Time Speech Recognition System" style="width:350px; height:350px; border-radius: 10px;"></a>
+											<h3 class="major">Real-Time Speech Recognition System</h3>
+											</div>
+											<p>Designed a Real-Time Speech Recognition System PCB using the INMP441 microphone for accurate sound capture, enabling seamless audio detection and processing in embedded applications.</p>
+											<a href="real_time_speech.html" class="special">Learn more</a>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
