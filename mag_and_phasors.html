@@ -43,9 +43,8 @@
 
 									<h3 class="major">Project Overview</h3>
 									<p>
-										This project involved designing a microcontroller-based reflow oven controller to automate the PCB soldering process with precise temperature control. A Finite State Machine (FSM) managed heating stages—preheat, soak, reflow, and cooling—based on real-time thermocouple readings. Oven power was modulated via PWM and a solid-state relay, with safety mechanisms to shut off heating if conditions weren’t met.
-										To enhance usability, we added a servo motor to open the oven door automatically, a fan for faster cooling, a buzzer to signal state transitions, and a 1-of-4 decoder with LED indicators. Temperature data was logged and visualized through a Python GUI, making the system both user-friendly and reliable for consistent, hands-free soldering.
-										I completed this project as part of ELEC 291 at UBC.
+										This project involved designing a microcontroller-based AC phasor voltmeter to measure and display the RMS voltage and phase difference between two sinusoidal signals. Built around the EFM8LB1 microcontroller, the system used peak detectors and zero-crossing comparators to extract amplitude and phase information, which was then digitized via the built-in ADC. The calculated values were displayed on an LCD screen for real-time monitoring.
+										To ensure accurate timing, timer peripherals were used to measure signal periods and phase shifts, while analog signal conditioning protected inputs from voltage spikes. All data processing and signal analysis were handled in embedded C, compiled and flashed using CrossIDE. I completed this project as a part of ELEC 291 at UBC.
 									</p>
 
 									<h3 class="major">Basic Functionality</h3>
