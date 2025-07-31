@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Aiman - Real Time Speech Recognition System</title>
+		<title>Aiman - Flight Controller Prototype</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -32,7 +32,7 @@
 					<section id="wrapper">
 						<header>
 							<div class="inner">
-								<h2>Real Time Speech Recognition System</h2>
+								<h2>Flight Controller Prototype</h2>
 								<!--<p><a href="https://github.com/adarshgovi/CPSC538-Project-Submission" class="special">Github Repository</a></p>--!>
 							</div>
 						</header>
@@ -43,7 +43,8 @@
 
 									<h3 class="major">Project Overview</h3>
 									<p>
-										This project focused on designing a real-time speech recognition system implemented on a custom-designed PCB, centered around the high-performance STM32H750VBT6 microcontroller. The system utilized the INMP441 digital MEMS microphone to capture audio signals with precision, which were then processed on board for keyword recognition and command classification. A proprietary USB Type-C connector was integrated into the PCB to enable reliable interfacing with external devices, with appropriate ESD protection circuitry to ensure robust operation in various environments. 
+										
+										This project focused on developing a flight controller prototype implemented on a custom-designed PCB, built around the STM32 microcontroller for high-speed real-time data processing. The system integrated multiple onboard sensors to measure atmospheric pressure, ambient temperature, gyroscopic motion across the X, Y, and Z axes, and altitude in 3D space. Embedded firmware was written to process and log this data continuously into a structured file format, which was stored on an SD card embedded directly into the PCB. To ensure reliable system integration, the board included appropriate power management and signal conditioning circuitry, enabling stable operation in dynamic flight environments.
 									</p>
 
 									<h3 class="major">Basic Functionality</h3>
