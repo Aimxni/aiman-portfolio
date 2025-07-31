@@ -56,30 +56,7 @@
 										<li>Accepts dual-channel input from function generators, allowing phase-controlled waveform testing.</li>
 										
 									</ul>
-
-									<h3 class="major">Bonus Features</h3>
-									<ul>
-										<li>A buzzer that alerts when each state is finished</li>
-										<li>An additional PWM signal is emitted by the microcontroller to power a servo motor to open the door of the oven.</li>
-										<li>A 1-of-4 decoder to indicate each state of the FSM.</li>
-										<li>Cooling fan to accelerate the last state.</li>
-										<li> An additional graph of the temperature read by the digital multimeter.</li>
-									</ul>
-									<p>In addition to the core functionality of the reflow oven controller, we implemented several enhancements to improve usability, feedback, and automation.</p>
-
-									<h3 class="major">LED Status Indicator using Logic Gates</h3>
-									<ul>
-										<li>To provide a visual representation of the Finite State Machine (FSM) state, we designed a 1-to-4 decoder circuit using NAND and NOT gates, connected to three LEDs.</li>
-										<li>The microcontroller sends either a high (1) or low (0) signal to a BJT, which amplifies the signal before passing it to the decoder.</li>
-										<li>The decoder processes the signal and activates the corresponding LED, providing real-time state indication.</li>
-									</ul>
-
-									<h3 class="major">Servo Motor for Oven Door Automation</h3>
-
-									<ul>
-										<li>A servo motor was used to automatically open the oven door during the cooling stage.</li>
-										<li>Since the servo motor lacked sufficient torque, we attached a face mask to the oven door to increase tension and facilitate smooth opening.</li>
-									</ul>
+									<p>This project was completed as part of the ELEC 291 course at UBC in collaboration with a teammate. I was primarily responsible for designing the analog front-end circuitry, including the peak detectors, zero-crossing comparators, and input protection circuits. Additionally, I supported the development of the embedded code, contributing to the ADC configuration, phase calculation logic, and LCD display output.</p>
 
 									<h3 class="major">Other Projects</h3>
 									<section class="features">
