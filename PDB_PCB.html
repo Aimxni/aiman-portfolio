@@ -1,1 +1,111 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Aiman - Power Discharge Board PCB</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+        <!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Aiman's Portfolio</a></h1>
+
+						<h2>
+							<a href="https://www.linkedin.com/in/aimanishmam/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
+							<a href="https://github.com/Aimxni?tab=repositories" class="icon brands fa-github"><span class="label">GitHub</span></a>
+						</h2>
+
+					</header>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Power Discharge Board PCB</h2>
+								<p><a href="https://github.com/Aimxni/Magnitude-and-Phasors-Voltmeter" class="special">Github Repository</a></p>
+							</div>
+						</header>
+
+				<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Project Overview</h3>
+									<p>
+										This project involved designing a Power Distribution Board (PDB) to manage and protect power delivery for multiple communication modules in a Nucleo U575-based system. The board integrated protection circuitry to safeguard against overcurrent and reverse polarity, as well as biasing circuits to ensure stable voltage levels for sensitive components. The schematic and PCB layout were created in Altium Designer, with careful trace routing to maintain signal integrity and meet current-handling requirements. Testing was performed with the Nucleo U575 to validate proper power sequencing, fault protection response, and stable operation under varied load conditions.
+									</p>
+
+									<h3 class="major">Basic Functionality</h3>
+									<ul>
+										<li>Measures the RMS voltage of two sinusoidal signals using peak detection and the onboard ADC of the EFM8LB1 microcontroller.</li>
+										<li>Calculates phase difference between reference and test signals via zero-cross detection and timer-based measurement.</li>
+										<li>Displays real-time voltage (RMS), phase angle (in degrees), and signal frequency on a 16x2 LCD screen.</li>
+										<li>Utilizes timer peripherals for accurate synchronization and signal timing analysis.</li>
+										<li>Accepts dual-channel input from function generators, allowing phase-controlled waveform testing.</li>
+										
+									</ul>
+									<p>This project was completed as part of the ELEC 291 course at UBC in collaboration with a teammate. I was primarily responsible for designing the analog front-end circuitry, including the peak detectors, zero-crossing comparators, and input protection circuits. Additionally, I supported the development of the embedded code, contributing to the ADC configuration, phase calculation logic, and LCD display output.</p>
+
+									<div style="text-align: center;">
+									<img src="images/IMG_6960.jpeg" alt="Magntitude and Phasor Voltmeter" style="width:450px; height:400px; border-radius: 10px;">
+									<p>Final breadboard implementation of the phasor voltmeter</p>
+									</div>
+									
+
+									<h3 class="major">Other Projects</h3>
+									<section class="features">
+										<article>
+											<div style="text-align: center;">
+											<a href="remote_controlled_robot.html" class="image"><img src="images/IMG_1437.jpeg" alt="Remote Controlled Coin Picking Robot" style="width:300px; height:350px; border-radius: 10px;"></a>
+											<h3 class="major">Remote Controlled Coin Picking Robot</h3>
+											</div>
+											<p>Built an autonomous coin-picking robot with metal detection, wireless control, and servo-driven collection mechanisms to detect, pick up, and count coins within a defined perimeter.</p>
+											<a href="remote_controlled_robot.html" class="special">Learn more</a>
+										</article>
+										<article>
+											<div style="text-align: center;">
+											<a href="real_time_speech.html" class="image"><img src="images/Real-Time Audio.png" alt="Real-Time Speech Recognition System" style="width:350px; height:350px; border-radius: 10px;"></a>
+											<h3 class="major">Real-Time Speech Recognition System</h3>
+											</div>
+											<p>Designed a Real-Time Speech Recognition System PCB using the INMP441 microphone for accurate sound capture, enabling seamless audio detection and processing in embedded applications.</p>
+											<a href="real_time_speech.html" class="special">Learn more</a>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
